@@ -143,6 +143,9 @@ textarea{
     /*height: 40px;*/
     color: #E20000;
 }
+#stack-tecnologico {
+    background-color: #E20000;
+}
 
 footer .fa-whatsapp{
     color:rgb(212, 210, 210); /*!important*/ /*sirve para decir que algo es mas importante que otros*/
