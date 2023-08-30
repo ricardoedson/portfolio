@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script> <!--libreria para el boton hamburguesa-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <title>Index-Inicio</title>
+</head>
+<body id="inicio">
+    <header class="container">
+        <nav class="navbar navbar-expand-md mb-4"> <!--navbar-dark bg-dark mb-4 -->
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">Top navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!--codigo menu hamburguesa para moviles-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre-mi.html">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="float-sm-end">
+                    <a href="contacto.html" class="btn btn-rojo">Descargar mi CV <i class="fa-solid fa-download"></i></a>
+                </li>
+            </ul>
+            <!--<form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> codigo de busqueda-->
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12 mx-auto text-center cohete"> <!--pt-3 pb-4-->
+                <img src="images/cohete.svg" alt="">
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-3 text-center my-3"> <!--offset-3 es para que desplace 3 columnas de la grilla de boostrap solamente al principio-->
+                <p class="p-1 ">
+                    Bienvenidos a mi sitio web sobre desarrollo de sistemas
+                </p>
+            </div>
+            <div class="col-12 text-center pt-1 pb-5">
+                <a href="proyectos.html" class="btn-blanco py-2 px-2 shadow">Mis proyectos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container mt-auto pb-3"> <!--class="container"-->
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-12 col-sm-3">
+                Sponsor <a href="https://depcsuite.com">DePC Suite</a>
+            </div>
+            <div class="col-12 col-sm-3">
+                <a href="mailto:edsotz2018@gmail.com">edsotz2018@gmail.com</a>
+            </div>
+        </div>
+        <a href="" target="_blank"><i class="fa-brands fa-whatsapp px-3 pt-3 pb-4" ></i></a>
+    </footer>
+</body>
+</html>

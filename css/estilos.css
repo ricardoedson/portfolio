@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    color: #e20000; /*color letra*/
+}
+
+p{
+    color: #6a6a6a;
+}
+#inicio img { 
+    height: 400px;
+}
+
+#inicio img:hover {
+    height: 410px;
+}
+.cohete {
+    height: 400px;
+}
+#inicio p {
+    color: white;
+    font-size: 17px;
+    border: 1px white solid;
+    border-radius: 15px;
+}
+
+#contacto, #inicio {
+    background-image: url("../images/fondo-contacto.png"); /*en url de imagen se usa ../ para abrir carpetas y poder el fondo de la pagina*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#proyectos {
+    background-image: url("../images/fondo-proyectos.png");
+    background-size: cover; /*ajuste a la pantalla usada*/
+    background-repeat: no-repeat; /*no repite la imagen*/
+    background-attachment: fixed;
+}
+
+textarea{
+    resize: none; /*para no ampliar el area*/
+}
+.proyecto {
+    background-color: white;
+}
+.proyecto h2 {
+    font-size: 16px; /*tamaño letra*/
+    text-transform: uppercase; /*vuelve todo mayuscula*/
+    color: white;
+    font-weight: 400;
+    background: rgb(125, 7, 7); /*dos lineas del color gradient sacado de la pagina css gradient*/
+    background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+    padding: 16px;
+}
+.proyecto img {
+    height: 200px;
+}
+.proyecto p {
+    font-size: 14px;
+    height: 150px;
+}
+
+.btn-blanco {
+    color: #370a6d;
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 0px;
+}
+.btn-blanco:hover{
+    background-color: #370a6d;
+    color: white;
+    text-decoration: none;
+    border: 0px;
+}
+
+.btn-rojo{
+    background-color: #e20000;
+    border-radius: 16px;
+    color: white;
+    font-weight: 100;
+    padding: 8px;
+    text-decoration: none;
+}
+.btn-rojo:hover{
+    background-color: #370a6d;
+    color: white; 
+}
+.link-rojo {
+    color: #E20000;
+    text-decoration: none;
+}
+.foto-perfil {
+    height: 300px;
+    border-radius: 500px;
+}
+
+/*main*/
+/*main{
+    min-height: 450px;
+}
+#proyectos main {
+    min-height: 750px; /*altura minima del main o cuerpo/contenido que se encuentra en el body}*/ 
+/*footer a:hover{
+    color: #370a6d;
+} cambio color cuando se pone el cursor sobre el hipervinculo*/
+
+/*footer*/
+#contacto footer, #contacto footer a, #inicio footer, #inicio footer a{
+    color: white;
+    font-weight: 300;
+}
+#proyectos footer, #proyectos footer a, #sobre-mi footer, #sobre-mi footer a {
+    color: #E20000;
+    font-weight: 300;
+}
+#contacto footer .fa-linkedin-in, #inicio footer .fa-linkedin-in{
+    font-size: 18px;
+    background-color: rgb(212, 210, 210);
+    color: #E20000;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+#contacto footer .fa-github, #inicio footer .fa-github{
+    font-size: 28px;
+    /*height: 40px;*/
+    color: rgb(212, 210, 210);
+}
+#proyectos footer .fa-linkedin-in{
+    font-size: 18px;
+    background-color: #E20000;
+    color: white;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+#proyectos footer .fa-github{
+    font-size: 28px;
+    /*height: 40px;*/
+    color: #E20000;
+}
+
+footer .fa-whatsapp{
+    color:rgb(212, 210, 210); /*!important*/ /*sirve para decir que algo es mas importante que otros*/
+    position: fixed; /*siempre en pantalla asi deslice*/
+    right: 70px; /*derecha*/
+    bottom: 0px; /*abajo*/
+    font-size: 40px; /*tamaño fuente o imagen en este caso*/
+    background-color: #370a6d; /*color fondo*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*header*/
+nav .active{
+    border-radius: 25px;
+    border: 1px solid #E20000;
+}
+ 
+@media (max-width: 750px) {
+    /*para mobile*/
+    #contacto, #inicio {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #proyectos {
+        background-size: contain; /*ajuste a la pantalla usada*/
+        background-repeat: no-repeat; /*no repite la imagen*/
+    }
+    #inicio p {
+        color: #E20000;
+        font-size: 17px;
+        border: 1px red solid;
+        border-radius: 15px;
+    }
+}
