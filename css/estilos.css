@@ -3,6 +3,14 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+nav a {
+    color: #282828;
+}
+nav .active{
+    border-radius: 25px;
+    border: 1px solid #E20000;
+}
+
 h1 {
     color: #e20000; /*color letra*/
 }
@@ -39,6 +47,9 @@ p{
     background-repeat: no-repeat; /*no repite la imagen*/
     background-attachment: fixed;
 }
+#descripcion {
+    color: #E20000;
+}
 
 textarea{
     resize: none; /*para no ampliar el area*/
@@ -61,6 +72,29 @@ textarea{
 .proyecto p {
     font-size: 14px;
     height: 150px;
+}
+
+#stack-tecnologico {   
+        background: rgb(125, 7, 7);
+        background: linear-gradient(90deg, rgba(125, 7, 7, 1) 0%, rgba(215, 11, 11, 1) 100%);
+}
+#stack-tecnologico h2 {
+    color: white;
+    font-size: 24px;
+}
+#stack-tecnologico h3 {
+    font-size: 14px;
+    color: #282828;
+    font-weight: 300;
+}
+#stack-tecnologico .tecnologia{
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+#stack-tecnologico .tecnologia i{
+    font-size: 60px; /*para imagenes de fontawesome debemos poner font-size para su tamaño*/
+    color:#696969;
 }
 
 .btn-blanco {
@@ -94,7 +128,7 @@ textarea{
     text-decoration: none;
 }
 .foto-perfil {
-    height: 300px;
+    height: 250px;
     border-radius: 500px;
 }
 
@@ -159,10 +193,7 @@ footer .fa-whatsapp{
 }
 
 /*header*/
-nav .active{
-    border-radius: 25px;
-    border: 1px solid #E20000;
-}
+
  
 @media (max-width: 750px) {
     /*para mobile*/
